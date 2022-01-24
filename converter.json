@@ -14,5 +14,5 @@
             "code": "def run(object):\\n    print(type(str(object)))"
         }
     ],
-    "managersnip": "    elif cmd_arr[0] == \"converter\":\\n        try:\\n            import app.converter.main\\n            app.converter.main.run(cmd_arr[1])\\n        except:\\n            print('This app is deleted')"
+    "managersnip": "    elif cmd_arr[0] == \"converter\":\\n        try:\\n            import app.converter.main\\n            app.converter.main.run(cmd_arr[1])\\n        except:\\n            print('This app is deleted')\\n"
 }
