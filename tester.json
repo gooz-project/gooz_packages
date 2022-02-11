@@ -1,5 +1,0 @@
-{
-    "name" : "tester",
-    "codes" : [{"filename":"main.py","code":"def run():\\n    print('Hello from tester')"}],
-    "managersnip":"    elif cmd_arr[0] == 'tester':\\n        try:\\n            import app.tester.main\\n            app.tester.main.run()\\n        except:\\n            print('This app is deleted')\\n"
-}
