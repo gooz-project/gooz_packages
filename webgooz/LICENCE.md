@@ -1,3 +1,5 @@
+### WebGooz Package for Gooz OS (official package)
+<hr/>
 MIT License
 
 Copyright (c) 2022 Gorkem Aktas, Hamza Kaya
