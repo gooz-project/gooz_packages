@@ -1,0 +1,9 @@
+{
+    "name": "vim",
+    "codes": [
+        {
+            "filename": "main.py",
+            "code": "from engine.engine_template import EngineTemplatepkglineflagfrom wifuxlogger import WifuxLogger as LOGpkglineflagpkglineflagdef run(cmds):pkglineflag    text = \"\"pkglineflag    while True:pkglineflag        msg = input()pkglineflag        if msg == \":w!\":pkglineflag            f = open(cmds[1],\"w+\")pkglineflag            f.write(text)pkglineflag            f.close()pkglineflag        elif msg == \":wq!\":pkglineflag            f = open(cmds[1],\"w+\")pkglineflag            f.write(text)pkglineflag            f.close()pkglineflag            breakpkglineflag        elif msg == \":q!\":pkglineflag            breakpkglineflag        elif msg == \":clear!\":pkglineflag            text = \"\"pkglineflag        else:pkglineflag            text += msgpkglineflag            text += \"\\n\""
+        }
+    ]
+}
