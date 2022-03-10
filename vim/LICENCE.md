@@ -1,4 +1,4 @@
-### SDCard Package for Gooz OS (official package)
+### Vim Editor for Gooz OS (official package)
 <hr/>
 MIT License
 
