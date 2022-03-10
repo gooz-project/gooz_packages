@@ -1,0 +1,9 @@
+{
+    "name": "temp",
+    "codes": [
+        {
+            "filename": "main.py",
+            "code": "from engine.engine_template import EngineTemplatepkglineflagfrom wifuxlogger import WifuxLogger as LOGpkglineflagfrom esp32 import raw_temperature as tempfuncpkglineflagdef run(cmds):pkglineflag    exec(\"{}({})\".format(cmds[1],EngineTemplate.exec_formatter_api(cmds)))pkglineflagpkglineflagdef get(cmds):pkglineflag    tf = tempfunc()pkglineflag    tc = (tf-32.0)/1.8pkglineflag    LOG.info(\"T = {0:4d} deg F or {1:5.1f}  deg C\".format(tf,tc))pkglineflag"
+        }
+    ]
+}
