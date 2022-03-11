@@ -1,0 +1,9 @@
+{
+    "name": "goell",
+    "codes": [
+        {
+            "filename": "main.py",
+            "code": "from engine.engine_template import EngineTemplatepkglineflagfrom wifuxlogger import WifuxLogger as LOGpkglineflagfrom engine.gooz_engine import GoozEnginepkglineflagimport ujsonpkglineflagpkglineflagdef run(cmds):pkglineflag    payload = parser(cmds)pkglineflag    for sections in payload[\"configuration\"]:pkglineflag        LOG.info(sections[\"section\"])pkglineflag        LOG.debug(\"Package {} will be used\".format(sections[\"package\"]))pkglineflag        try:pkglineflag            if sections[\"package\"] == \"goozshell\":pkglineflag                for command in sections[\"commands\"]:pkglineflag                    cmd_array = GoozEngine.parser(command)pkglineflag                    EngineTemplate(cmd_array)pkglineflag            else:pkglineflag                for command in sections[\"commands\"]:pkglineflag                    runcommand = sections[\"package\"] + \" \" + commandpkglineflag                    cmd_array = GoozEngine.parser(runcommand)pkglineflag                    EngineTemplate(cmd_array)pkglineflagpkglineflag        except Exception as ex:pkglineflag            LOG.error(\"{} failed\".format(sections[\"section\"]))pkglineflag            LOG.error(ex)pkglineflagpkglineflagdef parser(cmds):pkglineflag    payload = \"\"pkglineflag    with open(cmds[1], \"r\") as fp:pkglineflag        payload = fp.read()pkglineflag        fp.close()pkglineflag    payload = ujson.loads(payload)pkglineflag    return payloadpkglineflagpkglineflag"
+        }
+    ]
+}
