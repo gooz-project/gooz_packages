@@ -1,0 +1,9 @@
+{
+    "name": "python",
+    "codes": [
+        {
+            "filename": "main.py",
+            "code": "from engine.engine_template import EngineTemplatepkglineflagfrom wifuxlogger import WifuxLogger as LOGpkglineflagpkglineflagdef run(cmds):pkglineflag    if cmds[1] == \"-d\":pkglineflag        while True:pkglineflag            command = input(\">>>\")pkglineflag            if command == \"exit()\":pkglineflag                breakpkglineflag            else:pkglineflag                exec(command)pkglineflag    else:pkglineflag        try:pkglineflag            exec(\"filerun({})\".format(EngineTemplate.exec_formatter_api(cmds)))pkglineflagpkglineflag        except Exception as ex:pkglineflag            LOG.error(ex)pkglineflagpkglineflagdef filerun(cmds):pkglineflag    f = open(cmds[1],\"r\")pkglineflag    commands = f.read()pkglineflag    exec(commands)pkglineflag"
+        }
+    ]
+}
