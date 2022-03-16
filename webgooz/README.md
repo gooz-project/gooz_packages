@@ -100,3 +100,5 @@ webgooz apply --process create --file [JSON_PATH]
 ```shell
 webgooz apply --process delete --file [JSON_PATH]
 ```
+### Important Things
+- In API Sheet for GoozCLI, "last" word is so important. Don't forget it when develop a backend for WebGooz
