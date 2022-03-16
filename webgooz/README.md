@@ -62,3 +62,29 @@ Each function name represents the endpoint of the API branch. For example, if yo
 ```python
 def api_register():
 ```
+Then you can write your code in python in this function. 
+```python
+from app.webgooz.main import client
+from app.webgooz.main import breakFlag
+```
+The client and breakFlag variables must be included within the WebGooz main function. The reason for this is that the function can be stopped when necessary, that is, to ensure that the server is shut down. However, the client must be absolutely. Because otherwise data cannot be written to the other party.
+- Example JSON File
+```json
+{
+    "apis": [
+        {
+            "filename": "/api/register/v2.py",
+            "codes": "def run():backendlineflag    from app.webgooz.main import clientbackendlineflag    from app.webgooz.main import breakFlagbackendlineflag    response = \"<h1>Register Page</h1>\"backendlineflag    client.send('HTTP/1.0 200 OK\\r\\nContent-type: text/html\\r\\n\\r\\n')backendlineflag    client.send(response)backendlineflag    client.close()backendlineflagbackendlineflag"
+        },
+        {
+            "filename": "/api/hello/v2.py",
+            "codes": "def run():backendlineflag    from app.webgooz.main import clientbackendlineflag    from app.webgooz.main import breakFlagbackendlineflag    response = \"<h1>Hello v2 Page</h1>\"backendlineflag    client.send('HTTP/1.0 200 OK\\r\\nContent-type: text/html\\r\\n\\r\\n')backendlineflag    client.send(response)backendlineflag    client.close()backendlineflagbackendlineflag"
+        },
+        {
+            "filename": "/api/deneme/register.py",
+            "codes": "def run():backendlineflag    from app.webgooz.main import clientbackendlineflag    from app.webgooz.main import breakFlagbackendlineflag    response = \"<h1>Deneme Register Page</h1>\"backendlineflag    client.send('HTTP/1.0 200 OK\\r\\nContent-type: text/html\\r\\n\\r\\n')backendlineflag    client.send(response)backendlineflag    client.close()backendlineflagbackendlineflag"
+        }
+    ]
+}
+```
+
