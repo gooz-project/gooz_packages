@@ -91,3 +91,12 @@ The client and breakFlag variables must be included within the WebGooz main func
 ```shell
 python goozcli.py backend [BACKEND_PYTHON_FILE_PATH]
 ```
+### Declarative Creating and Deleting APIs
+- How To Create APIs
+```shell
+webgooz apply --process create --file [JSON_PATH]
+```
+- How To Delete APIs
+```shell
+webgooz apply --process delete --file [JSON_PATH]
+```
