@@ -87,4 +87,7 @@ The client and breakFlag variables must be included within the WebGooz main func
     ]
 }
 ```
-
+- How To Create JSON File
+```shell
+python goozcli.py backend [BACKEND_PYTHON_FILE_PATH]
+```
