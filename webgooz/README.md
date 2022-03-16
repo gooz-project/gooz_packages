@@ -27,3 +27,38 @@ webgooz close
 ```
 GET or POST -> [IP_ADDRESS]:[PORT]/stop
 ```
+## Creating API
+WebGooz is not just a package that provides a server service. At the same time, it also provides the opportunity to write backends with the tools in it.
+Written packages must be converted into JSON files in the appropriate format via Gooz CLI. Then it should be thrown into the board containing GoozOS. Afterwards, it should be processed into the server with the Declarative method in WebGooz.
+- Example API Sheet for Gooz CLI
+```python
+def api_register_v2():
+    from app.webgooz.main import client
+    from app.webgooz.main import breakFlag
+    response = "<h1>Register Page</h1>"
+    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\n\r\n')
+    client.send(response)
+    client.close()
+
+def api_hello_v2():
+    from app.webgooz.main import client
+    from app.webgooz.main import breakFlag
+    response = "<h1>Hello v2 Page</h1>"
+    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\n\r\n')
+    client.send(response)
+    client.close()
+def api_deneme_register():
+    from app.webgooz.main import client
+    from app.webgooz.main import breakFlag
+    response = "<h1>Deneme Register Page</h1>"
+    client.send('HTTP/1.0 200 OK\r\nContent-type: text/html\r\n\r\n')
+    client.send(response)
+    client.close()
+
+last
+
+```
+Each function name represents the endpoint of the API branch. For example, if you have an endpoint named /api/register, your definition should be as follows.
+```python
+def api_register():
+```
