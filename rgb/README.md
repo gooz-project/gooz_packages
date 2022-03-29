@@ -43,7 +43,7 @@ rgb show
 ```
 * You can show specific pin with specific parameter(name, red, green, blue, type)
 ```shell
-rgb show name:[PIN_NAME]
+rgb show name:[WANTED_PIN_NAME]
 ```
 
 ### Turning the light on in different colors
