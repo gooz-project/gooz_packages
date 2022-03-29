@@ -41,6 +41,10 @@ dht delete [NAME_OF_DELETING_DHT_SENSOR]
 ```shell
 dht show
 ```
+* You can show specific pin with specific parameter(name, pin, type)
+```shell
+dht show name:[WANTED_PIN_NAME]
+```
 
 ### Measuring Temperature and Humidity of Defined DHT Sensor
 ``` 
