@@ -36,6 +36,12 @@ sdcard delete [NAME_OF_DELETING_SDCARD]
 ```shell
 sdcard show
 ```
+* It shows all saved sdcard pins
+* Or you can show specific pins with following way:
+```shell
+sdcard show sck:15
+````
+* It shows just pins which [SCK_PIN] = 15
 
 ### Mounting An SD Card
 ``` 
