@@ -51,3 +51,8 @@ rgb show name:[WANTED_PIN_NAME]
 rgb write [NAME_OF_RGB_LED] --color [COLOR]
 ```
 * [COLOR] can be red, blue, green, white, yellow, orange, pink, purple or cyan
+
+### Turning the light off
+```shell 
+rgb off [NAME_OF_RGB_LED]
+```
