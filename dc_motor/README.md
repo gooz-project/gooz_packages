@@ -1,4 +1,4 @@
-# DC Motor Led Package for GoozOS
+# DC Motor Package for GoozOS
 This package provides using of dc_motor
 ## Package Install
 ```shell
