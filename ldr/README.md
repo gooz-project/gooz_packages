@@ -54,7 +54,7 @@ ldr read [PIN_NAME] --max [MAX_NUMBER] --min [MIN_NUMBER]
 
 ### Listening light intensity values measured by LDR Sensor
 ```shell 
-dht listen [PIN_NAME] --delay [SLEEP_TIME] --file [FILE_NAME] --max [MAX_NUMBER] --min [MIN_NUMBER] --loop [MEASURING_LOOP]
+ldr listen [PIN_NAME] --delay [SLEEP_TIME] --file [FILE_NAME] --max [MAX_NUMBER] --min [MIN_NUMBER] --loop [MEASURING_LOOP]
 ```
 * If [MEASURING_LOOP] is not entered, loop lasts until "ldr listen stop" command
 * If [FILE_NAME] is not entered, values will not be saved
