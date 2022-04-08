@@ -27,7 +27,7 @@ rgb var --name [RGB_LED_NAME] --red [RGB_RED_PIN] --green [RGB_GREEN_PIN] --blue
 ```shell
 rgb update [NAME_OF_UPDATING_PIN] --pin [NEW_RGB_LED_PIN]
 ``` 
-* You can update multiple parameters same time: 
+* You can update multiple parameters at the same time: 
 ```shell
 rgb update [NAME_OF_UPDATING_PIN] --name [NEW_RGB_LED_NAME] --type [NEW_RGB_LED_TYPE]
 ```
