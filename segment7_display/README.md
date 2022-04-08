@@ -61,7 +61,7 @@ segment7_display count [PIN_NAME] --range [START],[STOP],[STEP] --delay [SLEEP_T
 * Prints numbers from entered [START] to [STOP] by increasing or decreasing as much as [STEP] to 7 segment display
 * Default [SLEEP_TIME]: 1 second
 
-###Turning off 7 segment display
+### Turning off 7 segment display
 ```shell
 segment7_display off [PIN_NAME]
 ```
