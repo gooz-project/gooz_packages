@@ -14,12 +14,12 @@ Shows all commands
 ```shell
 rgb help [COMMAND_NAME]
 ```
-Shows special help for command_name
+Shows special help for [COMMAND_NAME]
 
 
 ### Defining a RGB Led
 ```shell
-rgb register --name [RGB_LED_NAME] --red [RGB_RED_PIN] --green [RGB_GREEN_PIN] --blue [RGB_BLUE_PIN] --type [RGB_TYPE]
+rgb var --name [RGB_LED_NAME] --red [RGB_RED_PIN] --green [RGB_GREEN_PIN] --blue [RGB_BLUE_PIN] --type [RGB_TYPE]
 ```
 * RGB type must be anode or cathode.
 * All of these variables must be entered.
