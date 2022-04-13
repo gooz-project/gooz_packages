@@ -10,12 +10,16 @@ pkg install sdcard
 ```shell
 sdcard help
 ```
+Shows general sdcard help
+```shell
+dht help [COMMAND_NAME]
+```
+Shows special help for command_name
 
 ### Defining a SD Card
 ```shell
 sdcard register --name [SDCARD_NAME] --miso [MISO_PIN] --mosi [MOSI_PIN] --sck [SCK_PIN] --cs [CS_PIN]
 ```
-
 * All of these variables must be entered.
 ### Updating Parameter(s) of a Defined SD Card
 ```shell
