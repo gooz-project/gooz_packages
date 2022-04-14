@@ -12,7 +12,7 @@ sdcard help
 ```
 Shows general sdcard help
 ```shell
-dht help [COMMAND_NAME]
+sdcard help [COMMAND_NAME]
 ```
 Shows special help for command_name
 
