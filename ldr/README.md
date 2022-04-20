@@ -56,6 +56,7 @@ ldr read [PIN_NAME] --max [MAX_NUMBER] --min [MIN_NUMBER]
 ```shell 
 ldr listen [PIN_NAME] --delay [SLEEP_TIME] --file [FILE_NAME] --max [MAX_NUMBER] --min [MIN_NUMBER] --loop [MEASURING_LOOP]
 ```
-* If [MEASURING_LOOP] is not entered, loop lasts until "ldr listen stop" command
+* If [MEASURING_LOOP] is not entered, loop lasts until "thread stop [THREAD_ID]" command
+* [THREAD_ID] is seen with "thread show" command
 * If [FILE_NAME] is not entered, values will not be saved
 * Default [SLEEP_TIME]: 1 second
