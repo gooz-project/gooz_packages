@@ -19,7 +19,7 @@ Shows special help for command_name
 
 ### Defining a DHT sensor
 ```shell
-dht register --name [DHT_SENSOR_NAME] --pin [DHT_SENSOR_PIN] --type [DHT_SENSOR_TYPE]
+dht var --name [DHT_SENSOR_NAME] --pin [DHT_SENSOR_PIN] --type [DHT_SENSOR_TYPE]
 ```
 * DHT sensor type must be 11 or 22.
 * All of these variables must be entered.
@@ -51,6 +51,13 @@ dht show name:[WANTED_PIN_NAME]
 dht measure [NAME_OF_DHT_SENSOR]
 ```
 * Prints the current temperature and Humidty of the given DHT Sensor
+* `-n` parameter returns numeric value
+* `-t` parameter measures temprature
+* `-h` parameter measures humidity
+
+```shell
+dht measure [NAME_OF_DHT_SENSOR] -t -n
+```
 ### Listening Temperature and Humidty of Defined DHT Sensor
 ```shell
 dht listen [NAME_OF_DHT_SENSOR]
