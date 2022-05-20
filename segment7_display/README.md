@@ -49,10 +49,10 @@ segment7_display show name:[WANTED_PIN_NAME]
 
 ### Writing numbers to 7 Segment Display
 ```shell 
-segment7_display write [PIN_NAME] --number [NUMBER] --dot [STATUS]
+segment7_display write [PIN_NAME] --number [NUMBER] -dot
 ```
 * [NUMBER] can be 0,1,2,3,4,5,6,7,8 or 9
-* [STATUS] can be on or off
+* If the "-dot" parameter is written, the dot pin value will be HIGH.
 
 ### Counting with 7 segment display
 ```shell 
