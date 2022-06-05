@@ -35,14 +35,14 @@ deepsleep var --name [PIN_NAME] --pin0 [PIN_NUMBER] --pin1 [BACKUP_PIN_NUMBER1] 
 ```shell
 deepsleep update [NAME_OF_UPDATING_PIN] --pin0 [NEW_PIN_NUMBER]
 ``` 
-You can update multiple parameters at the same time: 
+You can update multiple parameters at the same time
 ```shell
 deepsleep update [NAME_OF_UPDATING_PIN] --name [NEW_DEEPSLEEP_PIN_NAME] --pin1 [NEW_BACKUP_PIN_NUMBER]
 ```
 
 ### Deleting a Defined Deepsleep Pin
 ```shell
-deepsleep delete [NAME_OF_DELETING_DEEPSLEEP_PIN]
+deepsleep delete [NAME_OF_DELETING_PIN]
 ```
 You can also delete all registered deepsleep pins
 ```shell
@@ -53,7 +53,7 @@ deepsleep delete all
 ```shell
 deepsleep show
 ```
-You can also show specific pin with specific parameter(name, pin)
+You can also show specific pin with specific parameter(name, pin0, pin1, pin2)
 ```shell
 deepsleep show name:[WANTED_PIN_NAME]
 ```
