@@ -56,7 +56,7 @@ mpu6050 show name:[WANTED_PIN_NAME]
 mpu6050 read [PIN_NAME] --gyro x,y,z --acceleration x,y,z --temperature [STATUS]
 ```
 * If temperature is desired to be measured `[STATUS]` should be "on", otherwise --temperature does not need to be entered.
-* Only the parameters that are desirable to be measured should be entered.For example, if the x direction of gyro is desired to be measured,"--gyro x" is enough.
+* Only the parameters that are desirable to be measured should be entered.For example, if the x direction of gyro is desired to be measured,`--gyro x` is enough.
 
 ### Listening Gyro, Acceleration and Temperature Values Measured by MPU6050 Sensor
 ```shell 
@@ -64,7 +64,7 @@ mpu6050 listen [PIN_NAME] --gyro x,y,z --acceleration x,y,z --temperature [STATU
 ```
 * If temperature is desired to be measured `[STATUS]` should be "on".
 * Only the parameters that are desirable to be measured should be entered.
-* If `[MEASURING_LOOP]` is not entered, loop lasts until "thread stop `[THREAD_ID]`" command
+* If `[MEASURING_LOOP]` is not entered, loop lasts until `thread stop [THREAD_ID]` command
 * `[THREAD_ID]` is seen with "thread show" command
 * Default `[SLEEP_TIME]`: 1 second
 * If `[FILE_NAME]` is not entered, values will not be saved
