@@ -1,5 +1,5 @@
 # LCD Display Package for GoozOS
-This package provides use of lcd display
+This package provides use of LCD display
 ## Package Install
 ```shell
 pkg install lcd
