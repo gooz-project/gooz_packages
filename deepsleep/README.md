@@ -22,7 +22,7 @@ deepsleep
 ```
 * The machine goes into an eternal sleep until you wake it up manually(onboard reset button).
 
-### Defining for the deepsleep features
+### Defining for the Deepsleep Features
 ```shell
 deepsleep var --name [PIN_NAME] --pin0 [PIN_NUMBER] --pin1 [BACKUP_PIN_NUMBER1] --pin2 [BACKUP_PIN_NUMBER2]
 ```
